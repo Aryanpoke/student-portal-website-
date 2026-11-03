@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore courses, enroll, and track your learning progress.">
+
+    <title>Learnly — Course Learning Platform</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="topbar">
+        <a class="brand" href="#">
+            <span class="brand-mark">L</span>
+            learnly<span class="dot">.</span>
+        </a>
+
+        <nav>
+            <a class="active" href="#courses">Explore</a>
+            <a href="#dashboard">My learning</a>
+        </nav>
+
+        <span class="user-chip">
+            Your learning space
+            <b>S</b>
+        </span>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-copy">
+                <span class="eyebrow">— LEARN AT YOUR OWN PACE</span>
+
+                <h1>
+                    Small steps.<br>
+                    <em>Big possibilities.</em>
+                </h1>
+
+                <p>
+                    Build practical skills with guided courses,
+                    hands-on lessons, and a learning path that
+                    moves with you.
+                </p>
+
+                <a class="primary" href="#courses">
+                    Explore courses <span>↗</span>
+                </a>
+
+                <small class="hero-note">
+                    ✓ Learn. Practice. Grow.
+                </small>
+            </div>
+
+            <div class="hero-art">
+
+                <div class="orbit"></div>
+
+                <div class="float-tag tag-top">
+                    ✦
+                    <span>
+                        <b>Learn by doing</b>
+                        <small>Practical skills first</small>
+                    </span>
+                </div>
+
+                <div class="learning-card">
+
+                    <div class="window">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <span>YOUR NEXT CHAPTER</span>
+                    </div>
+
+                    <div class="books">
+                        <div class="book back"></div>
+                        <div class="book mid"></div>
+
+                        <div class="book front">
+                            LEARN
+                            <strong>01</strong>
+                        </div>
+                    </div>
+
+                    <p>✧ Knowledge in progress</p>
+                </div>
+
+                <div class="float-tag tag-bottom">
+                    ↗
+                    <span>
+                        <b>Keep moving</b>
+                        <small>One lesson at a time</small>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div>
+                <b id="courseCount">06</b>
+                <span>Curated courses</span>
+            </div>
+
+            <div>
+                <b>100%</b>
+                <span>Self-paced learning</span>
+            </div>
+
+            <div>
+                <b>Anytime</b>
+                <span>Learn on your schedule</span>
+            </div>
+
+        </section>
+
+        <!-- Courses Section -->
+        <section class="section" id="courses">
+
+            <div class="heading">
+
+                <div>
+                    <span class="eyebrow">
+                        YOUR NEXT SKILL STARTS HERE
+                    </span>
+
+                    <h2>Explore learning paths</h2>
+
+                    <p>
+                        Find a course that matches your curiosity and goals.
+                    </p>
+                </div>
+
+                <span class="count">
+                    <b id="visibleCount">0</b>
+                    courses available
+                </span>
+
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="toolbar">
+
+                <label class="search">
+                    ⌕
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search courses or topics..."
+                    >
+                </label>
+
+                <select id="categoryFilter" aria-label="Filter by category">
+                    <option value="all">All categories</option>
+                </select>
+
+                <select id="levelFilter" aria-label="Filter by level">
+                    <option value="all">All levels</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                </select>
+
+            </div>
+
+            <div class="course-grid" id="courseGrid">
+                <p class="loading">Loading courses...</p>
+            </div>
+
+            <p class="empty hidden" id="emptyState">
+                No courses match your search. Try another filter.
+            </p>
+
+        </section>
+
+        <!-- Student Dashboard -->
+        <section class="dashboard" id="dashboard">
+
+            <div class="section">
+
+                <div class="heading">
+
+                    <div>
+                        <span class="eyebrow">YOUR PERSONAL SPACE</span>
+
+                        <h2>My learning dashboard</h2>
+
+                        <p>
+                            Pick up where you left off and celebrate your progress.
+                        </p>
+                    </div>
+
+                    <div class="enrolled-total">
+                        <b id="enrolledCount">0</b>
+                        <span>Courses enrolled</span>
+                    </div>
+
+                </div>
+
+                <div id="dashboardList" class="dashboard-list">
+
+                    <p class="dashboard-empty">
+                        You haven't enrolled in a course yet.
+                        Explore the courses above to get started.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <a class="brand" href="#">
+            <span class="brand-mark">L</span>
+            learnly<span class="dot">.</span>
+        </a>
+
+        <span>Make learning part of your everyday.</span>
+
+        <small>© 2026 Learnly Learning Platform</small>
+
+    </footer>
+
+    <!-- Course Details Modal -->
+    <div
+        class="modal-backdrop hidden"
+        id="courseModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+
+        <div class="modal">
+
+            <button class="close" id="modalClose" aria-label="Close">
+                ×
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

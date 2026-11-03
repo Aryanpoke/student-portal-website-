@@ -1,0 +1,117 @@
+
+[
+    {
+        "id": 1,
+        "title": "HTML & CSS Foundations",
+        "category": "Web Development",
+        "level": "Beginner",
+        "duration": "4 weeks",
+        "lessons": 18,
+        "instructor": "Aarav Sharma",
+        "rating": 4.8,
+        "color": "mint",
+        "description": "Build a strong foundation in HTML and CSS, and create responsive web pages from scratch.",
+        "topics": [
+            "HTML document structure",
+            "Semantic elements and forms",
+            "CSS selectors and layouts",
+            "Flexbox and CSS Grid",
+            "Responsive design"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "JavaScript Essentials",
+        "category": "Programming",
+        "level": "Beginner",
+        "duration": "6 weeks",
+        "lessons": 24,
+        "instructor": "Meera Kapoor",
+        "rating": 4.9,
+        "color": "yellow",
+        "description": "Learn JavaScript fundamentals and make web pages interactive with practical exercises.",
+        "topics": [
+            "Variables and data types",
+            "Functions and scope",
+            "Arrays and objects",
+            "DOM manipulation",
+            "Events and LocalStorage"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Python Programming",
+        "category": "Programming",
+        "level": "Beginner",
+        "duration": "5 weeks",
+        "lessons": 21,
+        "instructor": "Kabir Verma",
+        "rating": 4.7,
+        "color": "blue",
+        "description": "Start programming with Python and practice problem-solving through small projects.",
+        "topics": [
+            "Python syntax",
+            "Conditions and loops",
+            "Functions",
+            "Lists and dictionaries",
+            "Working with files"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "UI/UX Design Basics",
+        "category": "Design",
+        "level": "Beginner",
+        "duration": "3 weeks",
+        "lessons": 15,
+        "instructor": "Sana Khan",
+        "rating": 4.8,
+        "color": "pink",
+        "description": "Understand user-centered design and create clean, usable digital experiences.",
+        "topics": [
+            "Design principles",
+            "User research",
+            "Wireframing",
+            "Color and typography",
+            "Prototyping"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Data Analysis with Excel",
+        "category": "Data Science",
+        "level": "Intermediate",
+        "duration": "4 weeks",
+        "lessons": 17,
+        "instructor": "Rohan Gupta",
+        "rating": 4.6,
+        "color": "purple",
+        "description": "Organize data, use formulas, and turn spreadsheets into meaningful insights.",
+        "topics": [
+            "Spreadsheet essentials",
+            "Formulas and functions",
+            "Sorting and filtering",
+            "Pivot tables",
+            "Charts and dashboards"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Git & GitHub Workflow",
+        "category": "Tools",
+        "level": "Beginner",
+        "duration": "2 weeks",
+        "lessons": 10,
+        "instructor": "Ishita Rao",
+        "rating": 4.9,
+        "color": "orange",
+        "description": "Learn version control and collaborate on projects using Git and GitHub.",
+        "topics": [
+            "Repositories",
+            "Commits and branches",
+            "Merge and pull",
+            "Remote repositories",
+            "GitHub Pages"
+        ]
+    }
+]
